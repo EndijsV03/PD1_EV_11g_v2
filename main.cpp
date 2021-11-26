@@ -3,6 +3,7 @@
 #include <ctime>
 using namespace std;
 
+//Endijs Vanags 11.g klase
 int main()
 {
     int a, b, sumV;
@@ -46,14 +47,22 @@ int main()
     {
         for (int j = 0; j < b; j++)
         {
-                mas[i][j] = rand()% 15;
+            mas[i][j] = rand()% 15;
             cout << mas[i][j] << " ";
-        sumV = sumV + mas[i][j];
+            sumV = sumV + mas[i][j];
         }
         cout << endl;
     }
+    cout << endl;
 
-    cout << "Visu elementu summa ir " << sumV << end;
+        if ( sumV % 2 == 0)
+        {
+            cout << "PARA" << endl;
+        }
+            else
+            {
+                cout << "Visu elementu summa ir " << sumV << endl;
+            }
 
     return 0;
 }
